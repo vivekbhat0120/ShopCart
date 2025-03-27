@@ -1,0 +1,85 @@
+/* Styles for previous and next arrow buttons */
+.slick-prev {
+    left: -50px !important; /* Move previous button further left */
+    z-index: 100 !important; /* Ensure it's above other elements */
+}
+
+/* Style for next and previous arrows */
+.slick-next:before, .slick-prev:before {
+    color: var(--first-color); /* Set color using a CSS variable */
+    font-size: 40px; /* Increase arrow size */
+}
+
+/* Styling for the main slider section */
+.catSliderSection {
+    width: 100%; /* Full width */
+    height: auto; /* Adjust height automatically */
+    padding: 30px 0px; /* Add vertical padding */
+}
+
+/* Spacing for each slide item */
+.catSliderMain .slick-slide {
+    padding: 20px;
+}
+
+/* Styling for each category slider item */
+.catSliderMain .catSliderItem {
+    cursor: pointer; /* Change cursor to pointer on hover */
+    height: auto; /* Automatically adjust height */
+    background: rgb(211, 228, 242); /* Light blue background color */
+    display: flex; /* Use flexbox for alignment */
+    justify-content: center; /* Center content horizontally */
+    align-items: center; /* Center content vertically */
+    border: 1px solid rgba(0, 0, 0, 0.4); /* Light black border */
+    border-radius: 10px; /* Round corners */
+}
+
+/* Layout for content inside category items */
+.catSliderMain .catSliderItem .info {
+    margin: auto; /* Center align content */
+    display: flex; /* Use flexbox for layout */
+    justify-content: center;
+    align-items: center;
+    flex-direction: column; /* Stack elements vertically */
+}
+
+/* Style for category images */
+.catSliderMain .catSliderItem .info img {
+    width: 100px; /* Set image width */
+    height: auto; /* Adjust height automatically */
+    padding: 20px 0px; /* Add vertical spacing */
+}
+
+/* Styling for category title text */
+.catSliderMain .catSliderItem .info h5 {
+    font-size: 20px; /* Set font size */
+    line-height: 25px; /* Adjust line height */
+    color: var(--black-color); /* Use black color variable */
+    font-weight: 600; /* Set font weight */
+}
+
+/* Styling for category item count text */
+.catSliderMain .catSliderItem .info p {
+    font-size: 16px;
+    line-height: 20px;
+    color: rgba(0, 0, 0, 0.8); /* Slightly transparent black */
+    font-weight: 500;
+}
+
+/* Slightly increase arrow button size */
+.catSliderMain .slick-arrow {
+    zoom: 110%;
+}
+
+/* Adjust next arrow position */
+.catSliderMain .slick-arrow.slick-next {
+    right: 15px !important;
+    top: -40px !important;
+}
+
+/* Adjust previous arrow position */
+.catSliderMain .slick-arrow.slick-prev {
+    right: 80px !important;
+    top: -40px !important;
+    left: inherit !important;
+}

@@ -1,0 +1,31 @@
+/* Import slick-carousel CSS for default styling */
+@import url('https://cdnjs.cloudflare.com/ajax/libs/slick-carousel/1.8.1/slick.min.css');
+@import url('https://cdnjs.cloudflare.com/ajax/libs/slick-carousel/1.8.1/slick-theme.min.css');
+
+/* Styling for the home slider container */
+.homeSlider {
+    padding: 45px 0px; /* Add vertical spacing */
+    cursor: pointer; /* Change cursor to pointer on hover */
+    width: 95%; /* Set width to 95% of the container */
+    margin: 0 auto; /* Center the slider */
+    display: flex; /* Use flexbox for alignment */
+    justify-content: center; /* Center content horizontally */
+}
+
+/* Styling for slider images */
+.homeSlider .sliderMain .sliderItem img {
+    cursor: pointer; /* Change cursor to pointer when hovering over images */
+    padding: 30px 0px; /* Add spacing above and below images */
+}
+
+/* Positioning for the previous arrow button */
+.homeSlider .sliderMain .slick-prev {
+    left: -50px !important; /* Move the previous button further left */
+    z-index: 100 !important; /* Ensure it appears above other elements */
+}
+
+/* Styling for next and previous arrows */
+.homeSlider .sliderMain .slick-next:before, .slick-prev:before {
+    color: var(--first-color); /* Use a CSS variable for arrow color */
+    font-size: 40px; /* Increase arrow size for better visibility */
+}
