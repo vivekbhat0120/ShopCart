@@ -1,0 +1,158 @@
+/* Reusable color variables for styling */
+:root {
+    --first-color: #07a4e9; /* Primary blue color */
+    --first-color-light: #9bd6ec; /* Lighter shade of primary color */
+    --black-color: #000000; /* Black color */
+    --white-color: #ffffff; /* White color */
+    --background-color: #dedede; /* Light gray background */
+}
+
+/* Styling for the main header container */
+header {
+    width: 100%; /* Full width */
+    height: auto; /* Automatically adjust height */
+    margin: auto; /* Center header */
+    padding: 20px 50px; /* Add space inside the header */
+}
+
+/* Logo styling */
+header .logo {
+    width: 150px; /* Set logo width */
+    height: auto; /* Adjust height automatically */
+    cursor: pointer; /* Change cursor to pointer */
+    display: block; /* Make logo a block element */
+    margin-right: auto; /* Align logo to the left */
+}
+
+/* Logo hover effect */
+header .logo:hover {
+    transform: translateY(-5px); /* Move logo slightly up */
+    transition: all 0.3s ease-in-out; /* Smooth animation */
+}
+
+/* Search bar container */
+header .headerSearch {
+    width: 100%; /* Full width */
+    height: 50px; /* Fixed height */
+    border: 2px solid var(--first-color); /* Border with primary color */
+    padding: 10px 20px; /* Padding inside the search bar */
+    border-radius: 5px; /* Rounded corners */
+}
+
+/* Category dropdown styling */
+header .headerSearch .selectDrop {
+    width: 25%; /* Set dropdown width */
+    font-size: 16px; /* Set font size */
+    font-weight: 500; /* Make text bold */
+    position: relative; /* Allow positioning */
+    cursor: pointer; /* Change cursor to pointer */
+}
+
+/* Separator line in the dropdown */
+header .headerSearch .selectDrop::after {
+    content: ''; /* Empty content */
+    position: absolute; /* Position absolutely */
+    top: 0px; /* Align to the top */
+    right: -10px; /* Position it slightly to the right */
+    width: 2px; /* Set width */
+    height: 25px; /* Set height */
+    background: rgba(0,0,0,0.3); /* Light black separator */
+}
+
+/* Search box styling */
+header .headerSearch .searchBox {
+    width: 75%; /* Set width */
+    padding-left: 30px; /* Add left padding */
+    position: relative; /* Allow absolute positioning inside */
+}
+
+/* Input field inside search box */
+header .headerSearch .searchBox input {
+    width: 100%; /* Full width */
+    height: 40px; /* Fixed height */
+    border: 0px; /* Remove border */
+    outline: none !important; /* Remove outline */
+    font-size: 16px; /* Set font size */
+}
+
+/* Search icon inside the search bar */
+header .headerSearch .searchBox .searchIcon {
+    position: absolute; /* Position it absolutely */
+    top: 8px; /* Adjust position from top */
+    right: 0px; /* Align to the right */
+    cursor: pointer; /* Change cursor to pointer */
+    font-size: 25px !important; /* Increase icon size */
+    color: var(--first-color); /* Use primary color */
+}
+
+/* Styling for header icons section */
+header .headerTabs {
+    padding-left: 20px; /* Add left padding */
+}
+
+/* Styling for individual icons in the header */
+header .headerTabs li {
+    position: relative; /* Enable relative positioning */
+    margin-left: 15px; /* Add left margin */
+    top: -5px; /* Adjust position slightly */
+}
+
+/* Icon labels styling */
+header .headerTabs li span {
+    font-size: 20px; /* Set font size */
+    cursor: pointer; /* Change cursor to pointer */
+    font-weight: 400; /* Set font weight */
+    padding-left: 20px; /* Add left padding */
+}
+
+/* Styling for images inside icons */
+header .headerTabs li span img {
+    width: 30px; /* Set image width */
+    height: 30px; /* Set image height */
+    margin-right: 10px; /* Add spacing between image and text */
+    color: var(--first-color); /* Use primary color */
+}
+
+/* Styling for the account dropdown menu */
+.subMenu {
+    position: absolute; /* Position absolutely */
+    top: 40px; /* Position below the icon */
+    right: -50px; /* Adjust position */
+    width: 180px; /* Set width */
+    height: auto; /* Adjust height automatically */
+    background: var(--white-color); /* White background */
+    box-shadow: 5px 5px 15px rgba(0,0,0, 0.5); /* Add shadow effect */
+    padding: 10px 0px; /* Add padding inside the menu */
+    z-index: 100; /* Ensure it appears above other elements */
+}
+
+/* Styling for menu items inside the dropdown */
+.subMenu li {
+    width: 100% !important; /* Full width */
+    list-style: none; /* Remove bullet points */
+    margin: 0px !important; /* Remove margin */
+}
+
+/* Styling for buttons inside the dropdown */
+.subMenu li button {
+    width: 100% !important; /* Full width */
+    text-align: left !important; /* Align text to the left */
+    justify-content: flex-start !important; /* Align content to the start */
+    color: rgb(69, 69, 69) !important; /* Dark gray text color */
+    text-transform: capitalize !important; /* Capitalize text */
+    font-size: 16px !important; /* Set font size */
+    padding: 10px 15px !important; /* Add padding */
+}
+
+/* Styling for icons inside the dropdown */
+.subMenu li button svg {
+    margin-right: 10px !important; /* Add spacing between icon and text */
+    color: var(--first-color); /* Use primary color */
+}
+
+/* Hover effect for dropdown buttons */
+.subMenu li button:hover {
+    background: var(--background-color) !important; /* Change background on hover */
+    color: var(--black-color) !important; /* Change text color on hover */
+}
+ 

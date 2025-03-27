@@ -1,0 +1,158 @@
+/* Define color variables */
+:root {
+    --first-color: #07a4e9; /* Primary blue color */
+    --first-color-light: #9bd6ec; /* Lighter shade of primary color */
+    --black-color: #000000; /* Black color */
+    --white-color: #ffffff; /* White color */
+    --background-color: #dedede; /* Light gray background color */
+}
+
+/* Styling for the main navigation bar */
+.nav {
+    width: 100%; /* Full width */
+    height: 60px; /* Set navbar height */
+    margin: auto; /* Center navbar */
+    border-top: 1px solid rgba(0,0,0,0.1); /* Light border at the top */
+    border-bottom: 1px solid rgba(0,0,0,0.1); /* Light border at the bottom */
+    display: flex; /* Use flexbox for alignment */
+    justify-content: space-between; /* Space out elements */
+    align-items: center; /* Center align items vertically */
+}
+
+/* Styling for category tab button */
+.nav .catTab {
+    padding: 8px 20px; /* Add padding */
+    background: var(--first-color); /* Set background color */
+    color: var(--white-color); /* Set text color */
+    border-radius: 5px; /* Round button corners */
+    font-size: 18px; /* Set font size */
+}
+
+/* Styling for navigation menu items */
+.nav nav ul li {
+    position: relative; /* Enable absolute positioning for dropdowns */
+}
+
+.nav nav ul li button {
+    text-transform: capitalize !important; /* Capitalize button text */
+    padding: 10px 15px; /* Add padding */
+    color: var(--first-color); /* Set text color */
+}
+
+.nav nav ul li button:hover {
+    color: var(--first-color); /* Maintain color on hover */
+    border-radius: 5px; /* Round corners */
+}
+
+.nav nav ul li button a {
+    text-decoration: none; /* Remove underline from links */
+    color: rgba(0,0,0,0.8); /* Dark gray text color */
+    font-size: 18px; /* Set font size */
+    font-weight: 500; /* Set font weight */
+    padding: 0px 5px; /* Add horizontal padding */
+}
+
+/* Styling for support section in navbar */
+.nav .part3 .support {
+    cursor: pointer; /* Make it clickable */
+    padding-left: 70px; /* Add left padding */
+}
+
+.nav .part3 .support svg {
+    font-size: 40px; /* Set icon size */
+    opacity: 0.8; /* Make slightly transparent */
+}
+
+.nav .part3 .support:hover {
+    transform: translateY(-5px); /* Move up slightly on hover */
+    transition: all 0.4s ease-in-out; /* Smooth animation */
+}
+
+.nav .part3 .support h4 {
+    font-size: 20px; /* Set heading font size */
+    line-height: 25px; /* Set line height */
+    color: var(--first-color); /* Set text color */
+    padding: 0px 20px; /* Add horizontal padding */
+}
+
+.nav .part3 .support p {
+    font-size: 12px; /* Set paragraph font size */
+    line-height: 20px; /* Set line height */
+    opacity: 0.8; /* Make text slightly transparent */
+    padding: 0px 10px; /* Add horizontal padding */
+}
+
+/* Styling for dropdown menu */
+.nav nav .dropDown_menu {
+    position: absolute; /* Position it below the parent */
+    top: 100%; /* Place it right below the menu item */
+    left: 0px; /* Align to the left */
+    width: 200px; /* Set width */
+    height: auto; /* Adjust height automatically */
+    background: var(--white-color); /* Set background color */
+    box-shadow: 5px 5px 15px rgba(0,0,0, 0.5); /* Add shadow effect */
+    padding: 10px 0px; /* Add vertical padding */
+    z-index: 100; /* Ensure it appears above other elements */
+    opacity: 0; /* Initially hidden */
+    visibility: hidden; /* Initially hidden */
+}
+
+/* Styling for dropdown menu items */
+.nav nav .dropDown_menu li {
+    width: 100%; /* Full width */
+    list-style: none; /* Remove bullet points */
+    left: -12px; /* Adjust positioning */
+}
+
+.nav nav .dropDown_menu li button {
+    width: 100%; /* Full width button */
+    text-align: left; /* Align text to left */
+    justify-content: flex-start; /* Align content to start */
+    color: rgb(69, 69, 69) !important; /* Set text color */
+    text-transform: capitalize !important; /* Capitalize text */
+    font-size: 16px !important; /* Set font size */
+    padding: 5px 2px; /* Add padding */
+}
+
+.nav nav .dropDown_menu li button:hover {
+    background: var(--background-color); /* Change background on hover */
+}
+
+/* Show dropdown menu on hover */
+.nav nav li:hover .dropDown_menu {
+    opacity: 1; /* Make visible */
+    visibility: visible; /* Make visible */
+    transition: all 0.2s ease-in-out; /* Smooth animation */
+}
+
+/* Styling for the mega menu */
+.megaMenu {
+    height: auto; /* Adjust height automatically */
+    border-radius: 10px; /* Round corners */
+}
+
+.megaMenu h4 {
+    font-size: 24px; /* Set heading font size */
+    line-height: 25px; /* Set line height */
+    color: var(--first-color); /* Set text color */
+    padding: 30px 0px 0px 50px; /* Add padding */
+    font-weight: 600; /* Set font weight */
+}
+
+/* Styling for mega menu list items */
+.megaMenu .col ul li {
+    margin-bottom: 10px; /* Add spacing between items */
+    display: block; /* Display as block */
+}
+
+.megaMenu .col ul li a {
+    color: rgba(0,0,0,0.8); /* Dark gray text color */
+    font-size: 20px; /* Set font size */
+    text-decoration: none; /* Remove underline */
+    margin-left: 30px; /* Add left margin */
+}
+
+.megaMenu .col ul li a:hover {
+    color: var(--first-color); /* Change color on hover */
+    transition: all 0.3s ease-in-out; /* Smooth animation */
+}

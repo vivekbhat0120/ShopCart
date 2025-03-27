@@ -1,0 +1,12 @@
+.homeProduct{margin-bottom: 200px; padding: 25px 0px;}
+.filterTab {
+    margin-left: auto; /* Pushes the list to the right */
+    display: flex; 
+    justify-content: flex-end;
+}
+.filterTab li{left: 50px; margin-left: 20px; cursor: pointer; font-weight: 400; }
+.filterTab li a{color: var(--black-color);font-size: 20px; text-decoration: none;position: relative;}
+.filterTab li a:hover{color: var(--first-color);font-weight: 600;}
+
+.homeProduct .productRow{display: flex; padding: 30px 0px; margin: 0px -15px;}
+.homeProduct .productRow .item{width: 20%; padding: 0px 15px; margin-bottom: 40px;}
