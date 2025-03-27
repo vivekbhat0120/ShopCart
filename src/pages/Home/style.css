@@ -1,12 +1,48 @@
-.homeProduct{margin-bottom: 200px; padding: 25px 0px;}
-.filterTab {
-    margin-left: auto; /* Pushes the list to the right */
-    display: flex; 
-    justify-content: flex-end;
+/* Style for the product section */
+.homeProduct {
+    margin-bottom: 200px; /* Add space below the section */
+    padding: 25px 0px; /* Add padding to the top and bottom */
 }
-.filterTab li{left: 50px; margin-left: 20px; cursor: pointer; font-weight: 400; }
-.filterTab li a{color: var(--black-color);font-size: 20px; text-decoration: none;position: relative;}
-.filterTab li a:hover{color: var(--first-color);font-weight: 600;}
 
-.homeProduct .productRow{display: flex; padding: 30px 0px; margin: 0px -15px;}
-.homeProduct .productRow .item{width: 20%; padding: 0px 15px; margin-bottom: 40px;}
+/* Styling for the filter tabs */
+.filterTab {
+    margin-left: auto; /* Pushes the tab list to the right */
+    display: flex; /* Arrange tabs in a row */
+    justify-content: flex-end; /* Align tabs to the right */
+}
+
+/* Styling for each filter tab */
+.filterTab li {
+    left: 50px; /* Adjust position */
+    margin-left: 20px; /* Add spacing between tabs */
+    cursor: pointer; /* Change cursor to pointer */
+    font-weight: 400; /* Normal text weight */
+}
+
+/* Styling for the filter tab links */
+.filterTab li a {
+    color: var(--black-color); /* Set text color */
+    font-size: 20px; /* Set font size */
+    text-decoration: none; /* Remove underline */
+    position: relative; /* Positioning for hover effect */
+}
+
+/* Change tab text color and weight on hover */
+.filterTab li a:hover {
+    color: var(--first-color); /* Change color on hover */
+    font-weight: 600; /* Make text bold */
+}
+
+/* Layout for product grid */
+.homeProduct .productRow {
+    display: flex; /* Arrange products in a row */
+    padding: 30px 0px; /* Add padding */
+    margin: 0px -15px; /* Adjust margin for spacing */
+}
+
+/* Individual product item styling */
+.homeProduct .productRow .item {
+    width: 20%; /* Set width of each product */
+    padding: 0px 15px; /* Add padding between items */
+    margin-bottom: 40px; /* Add space below each product */
+}
