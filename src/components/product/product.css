@@ -1,71 +1,122 @@
-.productThumb{
-    width: 100%;
-    height: auto;
-    border: 1px solid rgba(0, 0, 0, 0.2);
-    border-radius: 15px;
-    overflow: hidden;
-    padding: 20px;
-    margin-left: 10px;
-    cursor: pointer;
+.productThumb {
+    width: 100%; /* Make the product container take full width */
+    height: auto; /* Automatically adjust height */
+    border: 1px solid rgba(0, 0, 0, 0.2); /* Light border for aesthetics */
+    border-radius: 15px; /* Round the corners */
+    overflow: hidden; /* Prevent content from overflowing */
+    padding: 20px; /* Add spacing inside the container */
+    margin-left: 10px; /* Add a small left margin */
+    cursor: pointer; /* Change cursor to indicate clickability */
 }
 
 .productThumb .imgWrapper {
-    width: 100%; /* Ensure full width */
-    height: auto;
-    position: relative; /* Needed for absolute positioning of overlay */
-    overflow: hidden;
+    width: 100%; /* Make image wrapper take full width */
+    height: auto; /* Maintain aspect ratio */
+    position: relative; /* Positioning needed for overlay */
+    overflow: hidden; /* Prevent overflowing content */
 }
 
 .productThumb .imgWrapper .overlay {
-    position: absolute;
+    position: absolute; /* Overlay should be on top of the image */
     top: 0;
     left: 0;
-    width: 100%;
+    width: 100%; /* Cover entire image */
     height: 100%;
-    background: rgba(255, 255, 255, 0.2);
-    display: flex;
-    justify-content: center;
-    align-items: center;
+    background: rgba(255, 255, 255, 0.2); /* Transparent white overlay */
+    display: flex; /* Use flexbox for centering */
+    justify-content: center; /* Center items horizontally */
+    align-items: center; /* Center items vertically */
     opacity: 0; /* Initially hidden */
-    transition: opacity 0.3s ease-in-out;
+    transition: opacity 0.3s ease-in-out; /* Smooth fade-in effect */
 }
 
 .productThumb:hover .overlay {
-    opacity: 1; /* Show overlay on hover */
+    opacity: 1; /* Show overlay when hovering over the product */
 }
 
 .productThumb .overlay ul {
-    background: white;
-    width: 158px;
-    height: 50px;
-    border: 2px solid var(--first-color);
-    border-radius: 10px;
-}
-.productThumb .overlay ul li a{
-    display: block;
-    padding: 10px;
-    color: black;
-    opacity: 0.8;
+    background: white; /* White background for overlay menu */
+    width: 158px; /* Set width */
+    height: 50px; /* Set height */
+    border: 2px solid var(--first-color); /* Apply border */
+    border-radius: 10px; /* Round the corners */
 }
 
-.productThumb .overlay ul li a:hover{
+.productThumb .overlay ul li a {
+    display: block; /* Make the link take full width */
+    padding: 10px; /* Add spacing */
+    color: black; /* Text color */
+    opacity: 0.8; /* Slightly faded text */
+}
+
+.productThumb .overlay ul li a:hover {
+    color: var(--first-color); /* Change color on hover */
+}
+
+/* Add shadow effect on hover */
+.productThumb:hover {
+    box-shadow: 0 13px 15px rgb(0 0 0 / 40%);
+}
+
+/* Category name styling */
+.productThumb .catName {
+    color: var(--black-color);
+    font-size: 16px;
+}
+
+/* Title styling */
+.productThumb .title {
+    margin: 10px 0px;
+}
+
+/* Title link styling */
+.productThumb .title a {
+    color: var(--black-color);
+    font-size: 22px;
+    line-height: 25px;
+    font-weight: 600;
+    text-decoration: none;
+}
+
+/* Brand name styling */
+.productThumb .brand {
+    color: rgba(0, 0, 0, 0.8);
+}
+
+.productThumb .brand a {
+    text-decoration: none;
+    color: var(--black-color);
+}
+
+/* Pricing styling */
+.productThumb .price {
     color: var(--first-color);
+    font-size: 25px;
+    font-weight: bold;
+    margin-right: 20px;
 }
 
+.productThumb .oldPrice {
+    color: var(--black-color);
+    text-decoration: line-through; /* Strike-through for old price */
+    font-size: 20px;
+    opacity: 0.6; /* Faded look */
+}
 
+/* Button styling */
+.productThumb button {
+    font-size: 20px;
+    color: var(--white-color);
+    background: var(--first-color);
+    border-radius: 5px;
+    padding: 0px 10px;
+    margin-left: 40px;
+    margin-bottom: 5px;
+}
 
-/* .productThumb .imgWrapper .overlay{position: absolute; top: 0px; left: 0px; width: 100%; height: 100%; padding: 25px; display: flex; justify-content: center; align-items: center;}
-.productThumb .imgWrapper .overlay ul{background: white; width: 100px; height: 40px; border-radius: 5px;} */
-.productThumb:hover{box-shadow: 0 13px 15px rgb(0 0 0 / 40%);} 
-.productThumb .catName{color: var(--black-color); font-size: 16px;}
-.productThumb .title {margin: 10px 0px;}
-.productThumb .title a{color: var(--black-color); font-size: 22px;line-height: 25px; font-weight: 600; text-decoration: none;}
-.productThumb .brand{color: rgba(0, 0, 0, 0.8);}
-.productThumb .brand a{text-decoration: none; color: var(--black-color);}
-.productThumb .price{color: var(--first-color); font-size: 25px; font-weight: bold; margin-right: 20px;}
-.productThumb .oldPrice{color: var(--black-color); text-decoration: line-through;font-size: 20px; opacity: 0.6;}
-.productThumb button{font-size: 20px; color: var(--white-color); background: var(--first-color); border-radius: 5px; padding: 0px 10px; margin-left: 40px; margin-bottom: 5px;} 
-.productThumb button:hover{color: var(--first-color); background: var(--background-color); transition: all 0.3s ease-in-out;}
-
-
-
+/* Button hover effect */
+.productThumb button:hover {
+    color: var(--first-color);
+    background: var(--background-color);
+    transition: all 0.3s ease-in-out;
+}
