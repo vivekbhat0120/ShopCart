@@ -16,6 +16,11 @@
     overflow: hidden; /* Prevent overflowing content */
 }
 
+.productThumb:hover .imgWrapper {
+    transform: scale(1.05); /* Slightly zoom in on hover */
+    transition: all 0.3s ease-in-out; /* Smooth transition */
+}
+
 .productThumb .imgWrapper .overlay {
     position: absolute; /* Overlay should be on top of the image */
     top: 0;
@@ -55,7 +60,7 @@
 
 /* Add shadow effect on hover */
 .productThumb:hover {
-    box-shadow: 0 13px 15px rgb(0 0 0 / 40%);
+    box-shadow: 0 13px 15px rgb(0 0 0 / 60%);
 }
 
 /* Category name styling */
