@@ -68,8 +68,8 @@ const Product = (props) => {
                 <span className="brand">by <Link to="/brand/puma">PUMA</Link></span>
 
                 <div className="priceSection">
-                    <div>
-                        <span className="price">Rs.1599</span>
+                    <div className="d-flex align-items-center">
+                        <span className="price text-g font-weight-bold">Rs.1599</span>
                         <span className="oldPrice">2199</span>
                     </div>
                     <Button>

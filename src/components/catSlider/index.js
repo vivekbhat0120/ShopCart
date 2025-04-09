@@ -18,41 +18,13 @@ const CatSlider = () => {
     const settings = {
         dots: false,
         infinite: true,
-        speed: 500,
+        speed: 3000,              // How long the animation takes
+        cssEase: "linear",        // Ensures smooth motion
         slidesToShow: 8,
         slidesToScroll: 1,
         autoplay: true,
-        autoplaySpeed: 3000,
-        responsive: [
-            {
-                breakpoint: 1199,
-                settings: {
-                    slidesToShow: 6,
-                    slidesToScroll: 1
-                }
-            },
-            {
-                breakpoint: 991,
-                settings: {
-                    slidesToShow: 4,
-                    slidesToScroll: 1
-                }
-            },
-            {
-                breakpoint: 767,
-                settings: {
-                    slidesToShow: 3,
-                    slidesToScroll: 1
-                }
-            },
-            {
-                breakpoint: 575,
-                settings: {
-                    slidesToShow: 2,
-                    slidesToScroll: 1
-                }
-            }
-        ]
+        autoplaySpeed: 0,
+        arrows: false
     };
 
     return (

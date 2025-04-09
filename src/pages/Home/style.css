@@ -1,6 +1,5 @@
 /* Style for the product section */
 .homeProduct {
-    margin-bottom: 200px; /* Add space below the section */
     padding: 25px 0px; /* Add padding to the top and bottom */
 }
 
@@ -46,3 +45,12 @@
     padding: 0px 15px; /* Add padding between items */
     margin-bottom: 40px; /* Add space below each product */
 }
+
+
+.HomeProductsRow2 .productRow .slick-slide{
+    padding: 0px 10px;
+}
+
+
+
+

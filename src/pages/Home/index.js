@@ -1,17 +1,31 @@
 import React from "react";  // Import React library to use JSX
-import Slider from "./slider/index";  // Import the Slider component
+import SliderBanner from "./slider/index";  // Import the Slider component
 import CatSlider from "../../components/catSlider";  // Import category slider component
 import Banners from "../../components/banners/banner";  // Import banner component
 import Product from "../../components/product/product";  // Import Product component
+import Banner4 from "../../assets/images/ban4.png";  // Import banner image
 
 import "./style.css";  // Import stylesheet for styling
+import Slider from "react-slick";
+import TopProducts from "./TopProducts/index";
 
 // Define the Home component
 const Home = () => {
+
+  var settings = {
+    dots: false, // Show navigation dots below the slider
+    infinite: true, // Enable infinite looping of slides
+    speed: 500, // Transition speed in milliseconds
+    slidesToShow: 4, // Show one slide at a time
+    slidesToScroll: 1, // Scroll one slide at a time
+    Fade: false,
+    arrows: true,
+    autoplay: 1000
+};
     return (
       <>
         {/* Render the slider component */}
-        <Slider/>
+        <SliderBanner/>
 
         {/* Render the category slider component */}
         <CatSlider/>
@@ -23,7 +37,8 @@ const Home = () => {
         <section className="homeProduct">
             <div className="container-fluid">
               
-              {/* Header section with filter tabs */}
+{/* ----------------------- Header Popular Products section   --------------------------------- */}
+
               <div className="d-flex align-items-center">
                 <h4 className="hd">Popular Products</h4>
 
@@ -39,7 +54,9 @@ const Home = () => {
                 </ul>
               </div>
 
-              {/* Grid layout for product items */}
+
+{/* ----------------------- Grid layout for product items   --------------------------------- */}
+              
               <div className="row productRow">
                 {/* Display multiple Product components */}
                 <div className="item"><Product tag="Hot"/></div>
@@ -55,7 +72,65 @@ const Home = () => {
               </div>
             </div>
         </section>
+
+{/* ----------------------- Header Daily Best Sells Section   --------------------------------- */}
+
+        <section className="homeProduct HomeProductsRow2 pt-0">
+            <div className="container-fluid">
+              <div className="d-flex align-items-center">
+                <h4 className="hd">Daily Best Sells</h4>
+
+                {/* Filter tabs for product categories */}
+                <ul className="list list-inline ml-auto filterTab mb-0">
+                  <li className="list-inline-item"><a className="cursor">Featured</a></li>
+                  <li className="list-inline-item"><a className="cursor">Popular</a></li>
+                  <li className="list-inline-item"><a className="cursor">New added</a></li>
+                </ul>
+              </div>
+
+                  <div className="row">
+                    <div className="col-md-3 p-4">
+                      <img src={Banner4} className="w-100"/>
+                    </div>
+                    <div className="col-md-9">
+                      <Slider {...settings} className="productRow">
+                      <Product tag="Hot"/>
+                      <Product tag="New"/>
+                      <Product tag="Best"/>
+                      <Product tag="Sale"/>
+                            </Slider>
+                      </div>
+                    </div>
+            </div>
+        </section>
+
+        {/* ----------------------- Header Top Product Section   --------------------------------- */}
+
+        <section className="topProductsSection">
+            <div className="container-fluid">
+              <div className="row">
+              <div className="col">
+                  <TopProducts title="Top Selling"/>
+                  </div>
+
+                  <div className="col">
+                  <TopProducts title="Top Rated"/>
+                  </div>
+
+                  <div className="col">
+                  <TopProducts title="Recently Added"/>
+                  </div>
+
+                  <div className="col">
+                  <TopProducts title="Trending Products"/>
+                  </div>
+               </div>
+            </div>
+
+        </section>
+        <br></br>
       </>
+      
     )
 }
 

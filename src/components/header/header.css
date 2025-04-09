@@ -23,7 +23,9 @@ header {
     width: 100%;
     z-index: 1000;
     background: var(--white-color);
+    transition: all 0.3s ease-in-out;
   }
+
 
 /* Logo styling */
 header .logo {
@@ -49,7 +51,7 @@ header .headerSearch {
 }
 
 header .headerSearch .selectDrop {
-    width: 40%;
+    width: 30%;
     font-size: 16px;
     font-weight: 500;
     position: relative;
