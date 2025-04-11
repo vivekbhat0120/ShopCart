@@ -127,8 +127,8 @@ input:-internal-autofill-selected {
     font-weight: 600;
 }
 .form-check-input:checked {
-    background-color: #787878;
-    border-color: #787878;
+    background-color: var(--first-color);
+    border-color: var(--first-color);
 }
 .login-parent {
     padding-top: 9rem;

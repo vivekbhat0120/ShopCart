@@ -185,8 +185,9 @@
 }
 
 .productThumb button:hover {
-    background: var(--black-color);
-    color: var(--white-color);
+    background: var(--background-color);
+    color: var(--first-color);
+    font-weight: 800;
 }
 
 .productThumb button svg {

@@ -21,6 +21,7 @@ const HomeSlider = () => {
         slidesToScroll: 1, // Scroll one slide at a time
         autoplay: true, // Enable automatic sliding
         autoplaySpeed: 5000 // Time between slides (5 seconds)
+        
     };
 
     return (

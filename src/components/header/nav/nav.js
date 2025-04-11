@@ -102,15 +102,15 @@ const Nav = () => {
                                     <Button><Link to='/'>Pages <KeyboardArrowDownIcon /></Link></Button>
                                     <div className='dropDown_menu'>
                                         <ul>
-                                            <li><Button><Link to='/'>About Us</Link></Button></li>
-                                            <li><Button><Link to='/'>Contact</Link></Button></li>
-                                            <li><Button><Link to='/'>My Account</Link></Button></li>
-                                            <li><Button><Link to='/login'>Login</Link></Button></li>
-                                            <li><Button><Link to='/register'>Register</Link></Button></li>
-                                            <li><Button><Link to='/'>Reset Password</Link></Button></li>
-                                            <li><Button><Link to='/'>Privacy Policy</Link></Button></li>
-                                            <li><Button><Link to='/'>Terms of Services</Link></Button></li>
-                                            <li><Button><Link to='/'>404 Page</Link></Button></li>
+                                            <li><Link to='/'><Button>About Us</Button></Link></li>
+                                            <li><Link to='/'><Button>Contact</Button></Link></li>
+                                            <li><Link to='/'><Button>My Account</Button></Link></li>
+                                            <li><Link to='/login'><Button>Login</Button></Link></li>
+                                            <li><Link to='/register'><Button>Register</Button></Link></li>
+                                            <li><Link to='/'><Button>Reset Password</Button></Link></li>
+                                            <li><Link to='/'><Button>Privacy Policy</Button></Link></li>
+                                            <li><Link to='/'><Button>Terms of Services</Button></Link></li>
+                                            <li><Link to='/'><Button>404 Page</Button></Link></li>
                                         </ul>
                                     </div>
                                 </li>

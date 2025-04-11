@@ -90,7 +90,7 @@ const Home = () => {
               </div>
 
                   <div className="row">
-                    <div className="col-md-3 p-4">
+                    <div className="dailyBanner col-md-3 p-4">
                       <img src={Banner4} className="w-100"/>
                     </div>
                     <div className="col-md-9">

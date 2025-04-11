@@ -182,11 +182,18 @@
 
 .nav .dropDown_menu li button:hover {
   background: var(--background-color);
+  color: var(--black-color);
+  font-weight: 600;
+}
+
+.nav .dropDown_menu li a {
+  text-decoration: none;
 }
 
 /* Mega menu styling */
 .nav .megaMenu {
   position: absolute;
+  top: 54px;
   left: 0;
   width: 100%;
   background: var(--white-color);
@@ -203,13 +210,14 @@
 }
 
 .nav .megaMenu .col {
-  padding: 0 10px;
+  padding: 0 40px;
 }
 
 .nav .megaMenu h4 {
-  font-size: 18px;
+  font-size: 20px;
   color: var(--first-color);
   margin-bottom: 15px;
+  margin-left: 20px;
   padding: 0;
 }
 
@@ -217,11 +225,12 @@
   display: flex;
   flex-direction: column;
   gap: 8px;
+  margin-left: 20px;
 }
 
 .nav .megaMenu ul li a {
   color: rgba(0,0,0,0.8);
-  font-size: 14px;
+  font-size: 16px;
   text-decoration: none;
   transition: all 0.3s ease;
 }
