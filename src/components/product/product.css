@@ -95,11 +95,15 @@
     background: var(--white-color);
     width: auto;
     height: auto;
-    border: 1px solid var(--first-color);
+    border: 2px solid var(--background-color);
     border-radius: 5px;
     padding: 5px;
     display: flex;
     margin: 0;
+}
+
+.overlay ul:hover{
+    border-color: var(--first-color);
 }
 
 .overlay ul li {

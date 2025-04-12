@@ -226,7 +226,7 @@ const Nav = () => {
               <HeadsetMicOutlinedIcon />
               <div className="info">
                 <h4>Support</h4>
-                <p>24/7 Live Support</p>
+                <p>+91 9876543210</p>
               </div>
             </div>
           </div>
