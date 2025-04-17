@@ -1,6 +1,5 @@
 import React, { useState, useRef } from "react";
-import "../Header/Header.scss";
-import "../../styles/_variables.scss";
+import "./Header.scss";
 import Nav from "./Navbar/Navbar";
 import Logo from "../../assets/images/logo.png";
 import SearchIcon from "@mui/icons-material/Search";
@@ -60,7 +59,7 @@ const Header = () => {
               {/* Search Section */}
               <div className="col-lg-5 d-none d-lg-block">
                 <div className="headerSearch d-flex align-items-center">
-                  <Select data={categories} />
+                  <Select data={categories} /> {/* Dropdown for categories */}
                   <div className="searchBox">
                     <input type="text" placeholder="Search for items..." />
                     <SearchIcon className="searchIcon cursor" />
@@ -72,6 +71,7 @@ const Header = () => {
               <div className="col-lg-5 col-2 d-flex align-items-center">
                 <div className="ml-auto">
                   <ul className="list list-inline mb-0 headerTabs">
+                    {/* Compare Icon */}
                     <li className="list-inline-item">
                       <span className="d-flex align-items-center">
                         <img src={iconCompare} alt="Compare" />
@@ -80,6 +80,7 @@ const Header = () => {
                         </span>
                       </span>
                     </li>
+                    {/* Wishlist Icon */}
                     <li className="list-inline-item">
                       <span className="d-flex align-items-center">
                         <img src={iconFavorite} alt="Wishlist" />
@@ -88,6 +89,7 @@ const Header = () => {
                         </span>
                       </span>
                     </li>
+                    {/* Cart Icon */}
                     <li className="list-inline-item">
                       <span className="d-flex align-items-center">
                         <img src={iconCart} alt="Cart" />
@@ -96,6 +98,8 @@ const Header = () => {
                         </span>
                       </span>
                     </li>
+
+                    {/* Account Dropdown */}
                     <ClickAwayListener
                       onClickAway={() => setIsOpenDropDown(false)}
                     >
@@ -158,7 +162,7 @@ const Header = () => {
           open={mobileMenuOpen}
           onClose={() => setMobileMenuOpen(false)}
         >
-          {/* Mobile menu content can be added here if needed */}
+          {renderMobileMenu()}
         </Drawer>
       </div>
     </>

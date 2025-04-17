@@ -1,4 +1,4 @@
-@import "../../../styles/_variables.scss";
+@use "../../../styles/variable" as *;
 
 .nav {
   width: 100%;
