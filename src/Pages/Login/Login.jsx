@@ -40,11 +40,12 @@ function LoginPage() {
 
         setFormError({});
         console.log("Form Submitted Successfully:", formInput);
+        navigate('/home'); // Navigate only after successful validation
     };
 
     // Function to navigate Redirects to the Registration Page
     const handleSignUp = () => {
-        navigate('/register');
+        navigate('/');
     };
 
     // Function to navigate Redirects to the Forgot Password Page
@@ -97,7 +98,7 @@ function LoginPage() {
                         </span>
                     </div>
 
-                    <Button type="submit" variant="primary" className='mt-3 w-100' onClick={() => navigate('/home')}>Login</Button>
+                    <Button type="submit" variant="primary" className='mt-3 w-100'>Login</Button>
 
                     {/* New User? Sign Up */}
                     <div className="text-center mt-3">
